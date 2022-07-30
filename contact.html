@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cocktail Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img
+              id="cocktail-logo"
+              src="https://images.vexels.com/media/users/3/144120/isolated/preview/4eff3df3a5d6f917f98ba7917ee40011-neon-cocktails-sign.png"
+              alt="nav-logo"
+            />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <ul class="links hidden">
+            <li class="nav-list"><a href="index.html">Home</a></li>
+            <li class="nav-list"><a href="cocktails.html">Cocktails</a></li>
+            <li class="nav-list"><a href="contact.html">Contacts</a></li>
+          </ul>
+          <!-- Social icons -->
+          <ul class="social-icons">
+            <li>
+              <a href="https://twitter.com/hashtag/cocktails"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/groups/916905265136283/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://instagram.com/cocktails/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/create-cocktails/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Submit Form -->
+      <form class="contact-form">
+        <p class="alert"></p>
+        <label for="title">Title</label>
+        <select name="title" id="title">
+          <option value="Title">Title</option>
+          <option value="Mr.">Mr.</option>
+          <option value="Ms.">Ms.</option>
+          <option value="Mrs.">Mrs.</option>
+          <option value="other">Other</option>
+        </select>
+        <input
+          class="required"
+          type="text"
+          placeholder="Enter your first name..."
+        />
+        <input
+          class="required"
+          type="text"
+          placeholder="Enter your last name..."
+        />
+        <input class="required" type="email" placeholder="example@gmail.com" />
+        <input class="required" type="number" placeholder="+1 665-3333" />
+        <label for="message">Type Your Message Below</label>
+        <textarea
+          class="required"
+          name="message"
+          id="message"
+          cols="10"
+          rows="10"
+        ></textarea>
+        <input type="submit" value="Submit" id="submit-btn" />
+      </form>
+    </div>
+
+    <script type="module" src="contact.js"></script>
+  </body>
+</html>
