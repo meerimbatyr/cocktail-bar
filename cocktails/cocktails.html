@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="../style.css" rel="stylesheet" />
     <title>Cocktail Bar</title>
   </head>
   <body>
@@ -21,9 +21,9 @@
           </div>
           <!-- links -->
           <ul class="links hidden">
-            <li class="nav-list"><a href="index.html">Home</a></li>
-            <li class="nav-list"><a href="cocktails.html">About</a></li>
-            <li class="nav-list"><a href="contact.html">Contacts</a></li>
+            <li class="nav-list"><a href="../index.html">Home</a></li>
+            <li class="nav-list"><a href="./cocktails.html">Cocktails</a></li>
+            <li class="nav-list"><a href="../contactus/contact.html">Contact Us</a></li>
           </ul>
           <!-- Social icons -->
           <ul class="social-icons">
@@ -34,11 +34,33 @@
           </ul>
         </div>
       </nav>
+
+      <!-- Modal -->
+      <div class="modal">
+        <!-- <div class="modal-info">
+          <button class="back">Back to Home</button>
+          <h1 class="name">A1</h1>
+          <main>
+            <article class="image">
+            <img src="https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg" alt="drink-pic">
+            </article>
+            <article class="drink-info">
+              <p><span>Name:</span>A1</p>
+              <p><span>Category:</span>Cocktail</p>
+              <p><span>Info:</span>Alcoholic</p>
+              <p><span>Glass:</span>Cocktail Glass</p>
+              <p><span>Instructions:</span>Pour All Ingredients Into A Cocktail Shaker, Mix And Serve Over Ice Into A Chilled Glass.</p>
+              <p><span>Ingredients:</span>GinGrand MarnierLemon JuiceGrenadine</p>
+            </article>
+          </main>
+        </div> -->
+      
+      </div>
      
      <!-- Search input  -->
       <div class="search-wrapper">
          <h1>Search Your Favorite Cocktail</h1>
-        <form>
+        <form id="search-form">
           <input
             id="search-input"
             stype="text"
@@ -46,32 +68,21 @@
           />
         </form>
       </div>
+
+      <div class="load">
+        <!-- loading img -->
+      </div>
    
     <div class="filter flex">
-      <button class="filter-btn">All</button>
-      <button class="filter-btn">Cocktail</button>
-      <button class="filter-btn">Ordinary Drink</button>
-      <button class="filter-btn">Shot</button>
-      <button class="filter-btn">Coffee / Tea</button>
-      <button class="filter-btn">Other/Unknown</button>
+      <!-- filter buttons -->
     </div>
+    <div class="msg-display">
+      <div class="search-result">
+          <!-- cocktail item -->
+        </div>
 
-    <div class="search-result">
-      <!-- <div class="cocktail-item">
-          <div class="img-wrapper">
-            <img
-              src="https://www.liquor.com/thmb/GnTu-oC4mKRUCVztPZqDiAWw4l8=/735x0/whiskey-smash-720x720-recipe-c696cdf017494dbd981e51dca3f4402e.jpg"
-              alt=""
-            />
-          </div>
-          <div class="cocktail-info">
-            <p class="cocktail-name">ABC</p>
-            <p class="glass">Cocktail glass</p>
-            <p class="cocktail-type">Alcoholic</p>
-            <button class="details">Details</button>
-          </div>
-        </div> -->
     </div>
+    
 
    
 

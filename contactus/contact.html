@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <title>Cocktail Project</title>
   </head>
   <body>
@@ -31,9 +31,11 @@
           </div>
           <!-- links -->
           <ul class="links hidden">
-            <li class="nav-list"><a href="index.html">Home</a></li>
-            <li class="nav-list"><a href="cocktails.html">Cocktails</a></li>
-            <li class="nav-list"><a href="contact.html">Contacts</a></li>
+            <li class="nav-list"><a href="../index.html">Home</a></li>
+            <li class="nav-list">
+              <a href="../cocktails/cocktails.html">Cocktails</a>
+            </li>
+            <li class="nav-list"><a href="contact.html">Contact Us</a></li>
           </ul>
           <!-- Social icons -->
           <ul class="social-icons">
@@ -73,16 +75,23 @@
           <option value="other">Other</option>
         </select>
         <input
+          id="fname"
           class="required"
           type="text"
           placeholder="Enter your first name..."
         />
         <input
+          id="lname"
           class="required"
           type="text"
           placeholder="Enter your last name..."
         />
-        <input class="required" type="email" placeholder="example@gmail.com" />
+        <input
+          id="email"
+          class="required"
+          type="email"
+          placeholder="example@gmail.com"
+        />
         <input class="required" type="number" placeholder="+1 665-3333" />
         <label for="message">Type Your Message Below</label>
         <textarea
